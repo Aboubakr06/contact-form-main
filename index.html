@@ -1,44 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <link rel="stylesheet" href="./style.css">
-  <title>Frontend Mentor | Contact form</title>
-</head>
-<body>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
 
-  Contact Us
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Contact form</title>
+  </head>
+  <body>
+    <main>
+      <form>
+        <h1>Contact Us</h1>
+        <label for="firstName">First Name</label>
+        <input type="text" name="firstName" id="firstName" class="borderStyle">
+        <p class="error">This field is required</p>
 
-  First Name
-  This field is required
+        <label for="firstName">Last Name</label>
+        <input type="text" name="lastName" id="lastName" class="borderStyle">
+        <p class="error">This field is required</p>
 
-  Last Name
-  This field is required
+        <label for="emailAdress">Email Address</label>
+        <input type="email" name="emailAdress" id="emailAdress" class="borderStyle">
+        <p class="error">Please enter a valid email address</p>
 
-  Email Address
-  Please enter a valid email address
-  This field is required
+        <label for="queryType">Query Type</label>
+        <div>
+        <div class="radioCont">
+          <input type="radio" name="queryType" id="genralEnquiry" value="General Enquiry">
+          <label for="generalEnquiry">General Enquiry</label>
+        </div>
+        <div class="radioCont">
+          <input type="radio" name="queryType" id="supportRequest" value="Support Request">
+          <label for="supportRequest">Support Request</label>
+        </div>
+      </div>
+      <p class="error">Please select a query type</p>
 
-  Query Type
-  General Enquiry
-  Support Request
-  Please select a query type
+      <label for="message">Message</label>
+      <textarea name="message" id="message" class="borderStyle">
 
-  Message
-  This field is required
+      </textarea>
+      <p class="error">This field is required</p>
 
-  I consent to being contacted by the team
-  To submit this form, please consent to being contacted
-
-  Submit
-
-  Message Sent!
-  Thanks for completing the form. We'll be in touch soon!
-  
-  <script src="./script.js"></script>
-</body>
+      <input type="checkbox" name="consent" id="consent">
+      <label for="consent">I consent to being contacted by the team</label>
+      
+      <p class="error">To submit this form, please consent to being contacted</p>
+      <input type="submit" value="Submit">
+                      
+      <p>Message Sent! Thanks for completing the form. We'll be in touch soon!</p>
+      </form>
+    </main>
+    <script src="script.js"></script>
+  </body>
 </html>

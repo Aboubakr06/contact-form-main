@@ -1,0 +1,160 @@
+@import url('https://fonts.google.com/specimen/Karla');
+
+:root {
+    --clr-green-600: hsl(169, 82%, 27%);
+    --clr-green-200: hsl(148, 38%, 91%);
+    --clr-red: hsl(0, 66%, 54%);
+
+
+    --clr-grey-900: hsl(187, 24%, 22%);
+    --clr-grey-500: hsl(186, 15%, 59%);
+    --clr-white-100: hsl(0, 0%, 100%);
+
+    --ff-base: 'Karla', sans-serif;
+
+    --fw-bold: 700;
+    --fw-base: 400;
+}
+
+/*
+  CSS RESET
+*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+/***********
+   main Css
+************/
+body {
+    font-size: 16px;
+    font-family: var(--ff-base);
+    font-weight: var(--fw-base);
+    color: var(--clr-grey-900);
+    background-color: var(--clr-green-200); 
+}
+
+.error {
+    display: none;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+form {
+    background-color: var(--clr-white-100);
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+
+form input {
+    margin-bottom: 2rem;
+}
+
+
+h1 {
+    margin-bottom: 2rem;
+}
+
+.borderStyle, textarea {
+    padding: 0.4rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--clr-grey-900);
+}
+
+.radioCont {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--clr-grey-900);
+}
+
+.radioCont input[type="radio"] {
+    margin: 0;
+}
+
+textarea {
+    width: 100%;
+    height: 15rem;
+    margin-bottom: 2rem;
+}
+
+form input[type="submit"] {
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    margin-top: 2rem;
+    background-color: var(--clr-green-600);
+    width: 100%;
+    color: var(--clr-white-100);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: var(--fw-bold);
+}
+@media (min-width: 431px) {
+ 
+}
+ 
