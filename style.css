@@ -96,7 +96,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 2rem;
+    padding: 1.5rem;
 }
 
 form {
@@ -115,7 +115,7 @@ h1 {
     margin-bottom: 2rem;
 }
 
-.borderStyle, textarea {
+.borderStyle {
     padding: 0.4rem;
     border-radius: 0.5rem;
     border: 1px solid var(--clr-grey-900);
@@ -131,6 +131,28 @@ h1 {
     border: 1px solid var(--clr-grey-900);
 }
 
+.radioChecked {
+    display: none;
+}
+
+.radioBtn {
+    width: 20px;
+    height: 20px;
+    border: 1px solid var(--clr-grey-500);
+    border-radius: 50%;
+}
+
+.checkboxChecked {
+    display: none;
+}
+
+.checkboxBtn {
+    width: 18px;
+    height: 18px;
+    border: 1px solid var(--clr-grey-500);
+}
+
+/*
 .radioCont input[type="radio"] {
     margin: 0;
 }
@@ -154,6 +176,7 @@ form input[type="submit"] {
     justify-content: center;
     font-weight: var(--fw-bold);
 }
+*/
 @media (min-width: 431px) {
  
 }
