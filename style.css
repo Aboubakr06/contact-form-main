@@ -89,7 +89,8 @@ body {
 }
 
 .error {
-    display: none;
+
+    color: var(--clr-red);
 }
 
 main {
@@ -105,11 +106,25 @@ form {
     padding: 2rem;
 }
 
-
-form input {
-    margin-bottom: 2rem;
+.inputsFlex div,
+.emailCont,
+.checkboxCont {
+    margin-top: 1rem;
 }
 
+.radioflex,
+.emailCont{
+    margin-bottom: 1rem;
+}
+
+form input {
+    width: 100%;
+}
+
+label span {
+    color: var(--clr-green-600);
+    font-size: 1.2rem;
+}
 
 h1 {
     margin-bottom: 2rem;
@@ -142,6 +157,12 @@ h1 {
     border-radius: 50%;
 }
 
+.checkboxCont{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
 .checkboxChecked {
     display: none;
 }
@@ -152,15 +173,9 @@ h1 {
     border: 1px solid var(--clr-grey-500);
 }
 
-/*
-.radioCont input[type="radio"] {
-    margin: 0;
-}
-
 textarea {
     width: 100%;
     height: 15rem;
-    margin-bottom: 2rem;
 }
 
 form input[type="submit"] {
@@ -176,7 +191,7 @@ form input[type="submit"] {
     justify-content: center;
     font-weight: var(--fw-bold);
 }
-*/
+
 @media (min-width: 431px) {
  
 }

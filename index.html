@@ -19,47 +19,90 @@
     <main>
       <form>
         <h1>Contact Us</h1>
-        <label for="firstName">First Name</label>
-        <input type="text" name="firstName" id="firstName" class="borderStyle">
-        <p class="error">This field is required</p>
+        <div class="inputsFlex">
+          <div>
+            <label for="firstName">First Name <span>*</span></label>
+            <input
+              type="text"
+              name="firstName"
+              id="firstName"
+              class="borderStyle"
+            />
+            <p class="error">This field is required</p>
+          </div>
 
-        <label for="firstName">Last Name</label>
-        <input type="text" name="lastName" id="lastName" class="borderStyle">
-        <p class="error">This field is required</p>
-
-        <label for="emailAdress">Email Address</label>
-        <input type="email" name="emailAdress" id="emailAdress" class="borderStyle">
+          <div>
+            <label for="firstName">Last Name <span>*</span></label>
+            <input
+              type="text"
+              name="lastName"
+              id="lastName"
+              class="borderStyle"
+            />
+            <p class="error">This field is required</p>
+          </div>
+        </div>
+        
+        <div class="emailCont">
+        <label for="emailAdress">Email Address <span>*</span></label>
+        <input
+          type="email"
+          name="emailAdress"
+          id="emailAdress"
+          class="borderStyle"
+        />
         <p class="error">Please enter a valid email address</p>
-
-        <label for="queryType">Query Type</label>
-        <div>
-        <div class="radioCont">
-          <img class="radioChecked" src="./assets/images/icon-radio-selected.svg" alt="select radio">
-          <div class="radioBtn"></div>
-          <label for="generalEnquiry">General Enquiry</label>
-        </div>
-        <div class="radioCont">
-          <img class="radioChecked" src="./assets/images/icon-radio-selected.svg" alt="select radio">
-          <div class="radioBtn"></div>
-          <label for="supportRequest">Support Request</label>
-        </div>
       </div>
-      <p class="error">Please select a query type</p>
 
-      <label for="message">Message</label>
-      <textarea name="message" id="message" class="borderStyle">
-
-      </textarea>
-      <p class="error">This field is required</p>
-
-      <img class="checkboxChecked" src="./assets/images/icon-checkbox-check.svg" alt="select radio">
-      <div class="checkboxBtn"></div>
-      <label for="consent">I consent to being contacted by the team</label>
+        <label for="queryType">Query Type <span>*</span></label>
+        <div class="radioFlex">
+          <div class="radioCont">
+            <img
+              class="radioChecked"
+              src="./assets/images/icon-radio-selected.svg"
+              alt="select radio"
+            />
+            <div class="radioBtn"></div>
+            <label for="generalEnquiry">General Enquiry</label>
+          </div>
       
-      <p class="error">To submit this form, please consent to being contacted</p>
-      <input type="submit" value="Submit">
-                      
-      <p>Message Sent! Thanks for completing the form. We'll be in touch soon!</p>
+          <div class="radioCont">
+            <img
+              class="radioChecked"
+              src="./assets/images/icon-radio-selected.svg"
+              alt="select radio"
+            />
+            <div class="radioBtn"></div>
+            <label for="supportRequest">Support Request</label>
+          </div>
+        </div>
+
+        <p class="error">Please select a query type</p>
+
+        <label for="message">Message <span>*</span></label>
+        <textarea name="message" id="message" class="borderStyle"> </textarea>
+        <p class="error">This field is required</p>
+
+        <div class="checkboxCont">
+          <img
+            class="checkboxChecked"
+            src="./assets/images/icon-checkbox-check.svg"
+            alt="select radio"
+          />
+          <div class="checkboxBtn"></div>
+          <label for="consent"
+            >I consent to being contacted by the team <span>*</span></label
+          >
+        </div>
+        <p class="error">
+          To submit this form, please consent to being contacted
+        </p>
+
+        <input type="submit" value="Submit" />
+
+        <p>
+          Message Sent! Thanks for completing the form. We'll be in touch soon!
+        </p>
       </form>
     </main>
     <script src="script.js"></script>
