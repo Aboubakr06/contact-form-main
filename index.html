@@ -13,6 +13,7 @@
     />
 
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <title>Frontend Mentor | Contact form</title>
   </head>
   <body>
@@ -26,7 +27,7 @@
               type="text"
               name="firstName"
               id="firstName"
-              class="borderStyle"
+              class="borderStyle hoverStyle"
             />
             <p class="error">This field is required</p>
           </div>
@@ -37,7 +38,7 @@
               type="text"
               name="lastName"
               id="lastName"
-              class="borderStyle"
+              class="borderStyle hoverStyle"
             />
             <p class="error">This field is required</p>
           </div>
@@ -49,62 +50,58 @@
           type="email"
           name="emailAdress"
           id="emailAdress"
-          class="borderStyle"
+          class="borderStyle hoverStyle"
         />
         <p class="error">Please enter a valid email address</p>
       </div>
 
         <label for="queryType">Query Type <span>*</span></label>
         <div class="radioFlex">
-          <div class="radioCont">
+          <div class="radioCont" role="button" tabindex=0>
             <img
               class="radioChecked"
               src="./assets/images/icon-radio-selected.svg"
               alt="select radio"
             />
             <div class="radioBtn"></div>
-            <label for="generalEnquiry">General Enquiry</label>
+            <p>General Enquiry</p>
           </div>
       
-          <div class="radioCont">
+          <div class="radioCont" role="button" tabindex=0>
             <img
               class="radioChecked"
               src="./assets/images/icon-radio-selected.svg"
               alt="select radio"
             />
             <div class="radioBtn"></div>
-            <label for="supportRequest">Support Request</label>
+            <p>Support Request</p>
           </div>
         </div>
 
         <p class="error">Please select a query type</p>
 
         <label for="message">Message <span>*</span></label>
-        <textarea name="message" id="message" class="borderStyle"> </textarea>
+        <textarea name="message" id="message" class="borderStyle hoverStyle"> </textarea>
         <p class="error">This field is required</p>
 
-        <div class="checkboxCont">
+        <div class="checkBoxCont" role="button" tabindex=0>
+          <div class="checkBoxBtn"></div>
           <img
-            class="checkboxChecked"
+            class="checkBoxChecked"
             src="./assets/images/icon-checkbox-check.svg"
             alt="select radio"
           />
-          <div class="checkboxBtn"></div>
-          <label for="consent"
-            >I consent to being contacted by the team <span>*</span></label
-          >
+          <p for="consent"
+            >I consent to being contacted by the team <span>*</span></p>
         </div>
         <p class="error">
           To submit this form, please consent to being contacted
         </p>
 
-        <input type="submit" value="Submit" />
-
-        <p>
-          Message Sent! Thanks for completing the form. We'll be in touch soon!
-        </p>
+        <input type="submit" value="Submit" id="submitBtn"/>
       </form>
     </main>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script src="script.js"></script>
   </body>
 </html>

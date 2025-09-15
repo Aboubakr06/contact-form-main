@@ -89,8 +89,12 @@ body {
 }
 
 .error {
-
+    display: none;
     color: var(--clr-red);
+}
+
+.errorBorder {
+    border: 1px solid var(--clr-red) !important;
 }
 
 main {
@@ -108,7 +112,7 @@ form {
 
 .inputsFlex div,
 .emailCont,
-.checkboxCont {
+.checkBoxCont {
     margin-top: 1rem;
 }
 
@@ -144,30 +148,37 @@ h1 {
     margin-bottom: 1rem;
     border-radius: 0.5rem;
     border: 1px solid var(--clr-grey-900);
+    cursor: pointer; 
 }
 
 .radioChecked {
     display: none;
 }
 
+.clickedRadio {
+    border: 1px solid var(--clr-green-600) !important;
+    background-color: var(--clr-green-200) !important;
+}
+
 .radioBtn {
-    width: 20px;
+    max-width: 20px;
     height: 20px;
     border: 1px solid var(--clr-grey-500);
     border-radius: 50%;
 }
 
-.checkboxCont{
+.checkBoxCont{
     display: flex;
     align-items: center;
     gap: 1rem;
+    cursor : pointer;
 }
 
-.checkboxChecked {
+.checkBoxChecked {
     display: none;
 }
 
-.checkboxBtn {
+.checkBoxBtn {
     width: 18px;
     height: 18px;
     border: 1px solid var(--clr-grey-500);
@@ -176,6 +187,12 @@ h1 {
 textarea {
     width: 100%;
     height: 15rem;
+    cursor : pointer;
+}
+
+.hoverStyle:hover {
+    border: 1px solid var(--clr-green-600);
+    cursor: pointer; 
 }
 
 form input[type="submit"] {
@@ -190,9 +207,25 @@ form input[type="submit"] {
     align-items: center;
     justify-content: center;
     font-weight: var(--fw-bold);
+    cursor: pointer;
 }
 
 @media (min-width: 431px) {
- 
+    form {
+        min-width: 80%;
+    }
+
+    .inputsFlex, .radioFlex {
+        display: flex;
+        width: 100%;
+        gap: 1rem;
+    }
+
+    .inputsFlex div, .radioFlex div {
+        width: 100%;
+        margin-top: 0;
+    }
+
+
 }
  

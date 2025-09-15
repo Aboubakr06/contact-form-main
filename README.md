@@ -11,7 +11,6 @@ This is a solution to the [Contact form challenge on Frontend Mentor](https://ww
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
 
 ## Overview
@@ -58,6 +57,7 @@ Users should be able to:
 - CSS Grid
 - Mobile-first workflow
 - JavaScript
+- Toast Notifications
 
 ### What I learned
 
@@ -65,26 +65,29 @@ Use this section to recap over some of your major learnings while working throug
 
 To see how you can add code snippets, see below:
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
 ```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
+    Toastify({
+            text: ` 
+            <div">
+                <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
+                    <img src="assets/images/icon-success-check.svg"/>
+                    <strong>Message Sent!</strong>
+                </div>
+                <p>
+                Thanks for completing the form. We'll be in touch soon!
+            </p>
+        </div>`,
+            className: "info",
+            position: "center",
+            escapeMarkup: false,
+            style: {
+                background: "var(--clr-grey-900)",
+                borderRadius: "8px"
+            }
+        }).showToast();
 ```
-
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
 
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@Aboubakr06](https://www.frontendmentor.io/profile/Aboubakr06)
