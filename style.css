@@ -210,6 +210,10 @@ form input[type="submit"] {
     cursor: pointer;
 }
 
+form input[type="submit"]:hover {
+    background-color: hsl(169, 82%, 15%);;
+}
+
 @media (min-width: 431px) {
     form {
         min-width: 80%;
