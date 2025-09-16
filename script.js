@@ -12,7 +12,6 @@ const firstName = document.getElementById("firstName");
 const lastName = document.getElementById("lastName");
 const email = document.getElementById("emailAdress");
 const message = document.getElementById("message");
-const consent = document.getElementById("consent");
 
 const radioChecked = document.querySelectorAll(".radioChecked");
 const radioBtns = document.querySelectorAll(".radioBtn");
@@ -105,8 +104,8 @@ const validateInput = (field, key) => {
     }
 }
 const validateEmail = () => {
-    let emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
-    let emailValid = email.value.match(emailPattern);
+    const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+    const emailValid = email.value.match(emailPattern);
     if (emailValid) {
         email.nextElementSibling.style.display = "none";
         email.classList.remove("errorBorder");
