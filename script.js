@@ -71,7 +71,7 @@ checkBoxCont.addEventListener("click", () => {
     if (checkBoxCont.children[0].style.display == "none") {
         checkBoxCont.children[0].style.display = "block";
         checkBoxCont.children[1].style.display = "none";
-        formObj["consent"] = flase;
+        formObj["consent"] = false;
     } else {
         formObj["consent"] = true;
         checkBoxCont.children[0].style.display = "none";
