@@ -8,19 +8,18 @@ let formObj = {
     validForm: true
 };
 
-let firstName = document.getElementById("firstName");
-let lastName = document.getElementById("lastName");
-let email = document.getElementById("emailAdress");
-let queryType = document.getElementsByName("queryType");
-let message = document.getElementById("message");
-let consent = document.getElementById("consent");
+const firstName = document.getElementById("firstName");
+const lastName = document.getElementById("lastName");
+const email = document.getElementById("emailAdress");
+const message = document.getElementById("message");
+const consent = document.getElementById("consent");
 
-let radioChecked = document.querySelectorAll(".radioChecked");
-let radioBtns = document.querySelectorAll(".radioBtn");
-let radioCont = document.querySelectorAll(".radioCont");
-let checkBoxCont = document.querySelector(".checkBoxCont");
-let radioFlex = document.querySelector(".radioFlex");
-let submitBtn = document.getElementById("submitBtn");
+const radioChecked = document.querySelectorAll(".radioChecked");
+const radioBtns = document.querySelectorAll(".radioBtn");
+const radioCont = document.querySelectorAll(".radioCont");
+const checkBoxCont = document.querySelector(".checkBoxCont");
+const radioFlex = document.querySelector(".radioFlex");
+const submitBtn = document.getElementById("submitBtn");
 
 const reset = () => {
     radioCont.forEach(cont => {
