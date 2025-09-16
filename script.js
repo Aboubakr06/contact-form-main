@@ -51,6 +51,7 @@ radioCont.forEach(cont => {
             reset();
             e.currentTarget.children[0].style.display = "block";
             e.currentTarget.children[1].style.display = "none";
+            e.currentTarget.classList.add("clickedRadio");
         }
     });
 });
