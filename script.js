@@ -67,7 +67,7 @@ inputFunc(email, "email");
 inputFunc(message, "message");
 
 checkBoxCont.addEventListener("click", () => {
-    if (checkBoxCont.children[0].style.display == "none") {
+    if (checkBoxCont.children[0].style.display === "none") {
         checkBoxCont.children[0].style.display = "block";
         checkBoxCont.children[1].style.display = "none";
         formObj["consent"] = false;
@@ -81,7 +81,7 @@ checkBoxCont.addEventListener("click", () => {
 checkBoxCont.addEventListener("keydown", (e) => {
     if (e.key === 'Enter' || e.key === ' ') {
         e.preventDefault();
-        if (checkBoxCont.children[0].style.display == "none") {
+        if (checkBoxCont.children[0].style.display === "none") {
             checkBoxCont.children[0].style.display = "block";
             checkBoxCont.children[1].style.display = "none";
             formObj["consent"] = false;
@@ -94,7 +94,7 @@ checkBoxCont.addEventListener("keydown", (e) => {
 });
 
 const validateInput = (field, key) => {
-    if (formObj[key] == "") {
+    if (formObj[key] === "") {
         field.nextElementSibling.style.display = "block";
         field.classList.add("errorBorder");
         formObj["validForm"] = false;
@@ -117,7 +117,7 @@ const validateEmail = () => {
 }
 
 const validateRadio = () => {
-    if (formObj["queryType"] == "") {
+    if (formObj["queryType"] === "") {
         radioFlex.nextElementSibling.style.display = "block";
         formObj["validForm"] = false;
     } else {
@@ -126,7 +126,7 @@ const validateRadio = () => {
 }
 
 const validateCheckbox = () => {
-    if (formObj["consent"] == false) {
+    if (formObj["consent"] === false) {
         checkBoxCont.nextElementSibling.style.display = "block";
         formObj["validForm"] = false;
     }
@@ -144,7 +144,7 @@ submitBtn.addEventListener("click", (e) => {
     validateRadio();
     validateInput(message, "message");
     validateCheckbox();
-    if (formObj["validForm"] == true) {
+    if (formObj["validForm"] === true) {
         Toastify({
             text: ` 
             <div">
