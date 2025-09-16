@@ -55,16 +55,16 @@ radioCont.forEach(cont => {
     });
 });
 
-const inputFunct = (field, key) => {
-    field.addEventListener("input", (e) => {
+const inputFunc = (field, key) => {
+    field.addEventListener("input", () => {
         formObj[key] = field.value;
     });
 }
 
-inputFunct(firstName, "firstName");
-inputFunct(lastName, "lastName");
-inputFunct(email, "email");
-inputFunct(message, "message");
+inputFunc(firstName, "firstName");
+inputFunc(lastName, "lastName");
+inputFunc(email, "email");
+inputFunc(message, "message");
 
 checkBoxCont.addEventListener("click", () => {
     if (checkBoxCont.children[0].style.display == "none") {
